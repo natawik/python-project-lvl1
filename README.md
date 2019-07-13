@@ -7,3 +7,5 @@
 [![Build Status](https://travis-ci.org/natawik/python-project-lvl1.svg?branch=master)](https://travis-ci.org/natawik/python-project-lvl1)
 
 [![asciicast](https://asciinema.org/a/256327.svg)](https://asciinema.org/a/256327)
+
+[![asciicast](https://asciinema.org/a/257193.svg)](https://asciinema.org/a/257193)
