@@ -15,9 +15,9 @@ def calc():
     # If all three answers are correct.
     counter = 1
     while(counter <= 3):
+        right_answer = brain_games.exp_gen.rand_expression(exp)
         print(question.format(exp))
         answer = prompt.string('Your answer: ')
-        right_answer = brain_games.exp_gen.rand_expression(exp)
         if (answer == str(right_answer)):
             print('Correct!')
             exp = brain_games.exp_gen.show_rand_expression()
