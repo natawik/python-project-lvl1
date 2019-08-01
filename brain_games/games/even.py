@@ -16,9 +16,9 @@ def is_even():
     # If all three answers are correct.
     counter = 1
     while(counter <= 3):
+        right_answer = brain_games.num_gen.is_even_number(number)
         print(question.format(number))
         answer = prompt.string('Your answer: ')
-        right_answer = brain_games.num_gen.is_even_number(number)
         if (answer == right_answer):
             print('Correct!')
             number = brain_games.num_gen.show_rand_number()
