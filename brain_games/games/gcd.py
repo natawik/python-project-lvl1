@@ -15,9 +15,9 @@ def find_gcd():
     # If all three answers are correct.
     counter = 1
     while(counter <= 3):
+        right_answer = brain_games.gcd_gen.is_gcd(gcd)
         print(question.format(gcd))
         answer = prompt.string('Your answer: ')
-        right_answer = brain_games.gcd_gen.is_gcd(gcd)
         if (answer == str(right_answer)):
             print('Correct!')
             gcd = brain_games.gcd_gen.show_two_rand_numbers()
