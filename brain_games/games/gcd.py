@@ -4,6 +4,7 @@ import brain_games.cli
 
 
 def find_gcd():
+    name = brain_games.cli.run()
     gcd = brain_games.gcd_gen.show_two_rand_numbers()
     counter = 1
     while(counter <= 3):
@@ -16,7 +17,7 @@ def find_gcd():
             counter += 1
         else:
             print(brain_games.cli.wrong_answer.format(answer, right_answer))
-            print(brain_games.cli.try_again.format(brain_games.cli.name))
+            print(brain_games.cli.try_again.format(name))
             break
     else:
-        print(brain_games.cli.correct_answer.format(brain_games.cli.name))
+        print(brain_games.cli.correct_answer.format(name))
