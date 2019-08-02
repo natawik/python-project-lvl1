@@ -4,6 +4,7 @@ import brain_games.cli
 
 
 def calc():
+    name = brain_games.cli.run()
     exp = brain_games.exp_gen.show_rand_expression()
     counter = 1
     while(counter <= 3):
@@ -16,7 +17,7 @@ def calc():
             counter += 1
         else:
             print(brain_games.cli.wrong_answer.format(answer, right_answer))
-            print(brain_games.cli.try_again.format(brain_games.cli.name))
+            print(brain_games.cli.try_again.format(name))
             break
     else:
-        print(brain_games.cli.correct_answer.format(brain_games.cli.name))
+        print(brain_games.cli.correct_answer.format(name))
