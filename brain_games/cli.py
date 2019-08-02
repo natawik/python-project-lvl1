@@ -8,9 +8,6 @@ def run():
     return(name)
 
 
-name = run()
-
-
 question = "Question: {}"
 # Shows a random number for game "is even?"
 # Shows a random expression for game "calc"
