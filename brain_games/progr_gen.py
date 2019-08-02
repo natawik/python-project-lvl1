@@ -4,18 +4,18 @@ from random import randint
 def show_progression():
     num_1 = randint(1, 100)
     step = randint(1, 10)
-    progr_length = 1
-    show_progr = ''
-    while (progr_length <= 10):
+    prog_length = 1
+    show_prog = ''
+    while (prog_length <= 10):
         num_1 += step
-        show_progr += str(num_1) + ' '
-        progr_length += 1
-    return show_progr
+        show_prog += str(num_1) + ' '
+        prog_length += 1
+    return show_prog
 
 
-def hidden_number(progression):
-    return progression.split(' ')[randint(0, 9)]
+def hidden_number(prog):
+    return prog.split(' ')[randint(0, 9)]
 
 
-def hide_number(progression, right_answer):
-    return progression.replace(right_answer, '..')
+def hide_number(prog, right_answer):
+    return prog.replace(right_answer, '..')
