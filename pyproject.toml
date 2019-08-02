@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "natawik_brain_games"
-version = "0.3.0"
+version = "0.4.0"
 description = "1st python-project"
 authors = ["natawik <natawik.spb@gmail.com>"]
 packages = [
