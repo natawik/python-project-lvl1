@@ -4,6 +4,7 @@ import brain_games.cli
 
 
 def is_even():
+    name = brain_games.cli.run()
     number = brain_games.num_gen.show_rand_number()
     # Return a random integer N such that a <= N <= b.
     counter = 1
@@ -17,7 +18,7 @@ def is_even():
             counter += 1
         else:
             print(brain_games.cli.wrong_answer.format(answer, right_answer))
-            print(brain_games.cli.try_again.format(brain_games.cli.name))
+            print(brain_games.cli.try_again.format(name))
             break
     else:
-        print(brain_games.cli.correct_answer.format(brain_games.cli.name))
+        print(brain_games.cli.correct_answer.format(name))
