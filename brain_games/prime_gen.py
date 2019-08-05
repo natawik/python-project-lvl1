@@ -7,15 +7,14 @@ def show_rand_number():
 
 
 def is_prime(number):
-    if (number <= 2):
+    if (number < 2):
         return True
-    elif (number > 2):
-        div = 2
-        while(number % div != 0):
-            div += 1
-            if (div == number):
-                return True
-        return False
+    div = 2
+    while(div <= number / 2):
+        if (number % div == 0):
+            return False
+        div += 1
+    return True
 
 
 def right_answer(number):
