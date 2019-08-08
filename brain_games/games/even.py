@@ -1,6 +1,7 @@
 import prompt
 import brain_games.num_gen
 import brain_games.cli
+import brain_games.show_rand_num
 
 
 def is_even():
