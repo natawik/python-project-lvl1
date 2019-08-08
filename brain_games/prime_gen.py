@@ -1,11 +1,3 @@
-from random import randint
-
-
-def show_rand_number():
-    number = randint(1, 100)
-    return number
-
-
 def is_prime(number):
     if (number < 2):
         return True
