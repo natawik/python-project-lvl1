@@ -1,4 +1,5 @@
 from random import randint, choice
+import brain_games.convertation_str_to_num
 
 
 def show_rand_expression():
@@ -8,28 +9,9 @@ def show_rand_expression():
     return (show.format(num_1, operation, num_2))
 
 
-def conv_num_1(exp):
-    i = 0
-    num_1 = ''
-    while(exp[i] != ' '):
-        num_1 += exp[i]
-        i += 1
-    return int(num_1)
-
-
-def conv_num_2(exp):
-    i = -1
-    num_2 = ''
-    while(exp[i] != ' '):
-        num_2 += exp[i]
-        i -= 1
-    num_2 = num_2[::-1]
-    return int(num_2)
-
-
 def rand_expression(exp):
-    num_1 = conv_num_1(exp)
-    num_2 = conv_num_2(exp)
+    num_1 = brain_games.convertation_str_to_num.conv_num_1(exp)
+    num_2 = brain_games.convertation_str_to_num.conv_num_2(exp)
     if '-' in exp:
         right_answer = num_1 - num_2
     elif '+' in exp:
