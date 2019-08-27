@@ -13,9 +13,9 @@ def show_progression():
     return show_prog
 
 
-def hidden_number(prog):
-    return prog.split(' ')[randint(0, 9)]
+def hidden_number(condition):
+    return condition.split(' ')[randint(0, 9)]
 
 
-def hide_number(prog, right_answer):
-    return prog.replace(right_answer, '..')
+def hide_number(condition, right_answer):
+    return condition.replace(right_answer, '..')
