@@ -15,7 +15,7 @@ def what_is_right(game, condition):
     elif game == 'prime':
         right_answer = brain_games.prime_gen.compare(condition)
     elif game == 'gcd':
-        right_answer = brain_games.gcd_gen.is_gcd(condition)  
+        right_answer = brain_games.gcd_gen.is_gcd(condition)
     elif game == 'progression':
         right_answer = brain_games.progr_gen.hidden_number(condition)
     return right_answer

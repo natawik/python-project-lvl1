@@ -18,7 +18,7 @@ def game_condition(game):
     return condition
 
 
-def show_condition(condition, right_answer, game):
+def show_cond(condition, right_answer, game):
     if game == 'progression':
         return brain_games.progr_gen.hide_number(condition, right_answer)
     else:
