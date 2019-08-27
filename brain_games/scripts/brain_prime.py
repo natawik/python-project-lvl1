@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games.prime import is_prime
+from brain_games.games.game_engine import engine
 
 
 def main():
     print('Welcome to the Brain Games!')
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    is_prime()
+    engine('prime')
 
 
 if __name__ == '__main__':
