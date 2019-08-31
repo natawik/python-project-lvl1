@@ -1,5 +1,5 @@
 from random import randint, choice
-import brain_games.convertation_str_to_num
+import brain_games.games.convert_str_to_num
 
 
 def show_rand_expression():
@@ -10,8 +10,8 @@ def show_rand_expression():
 
 
 def rand_expression(condition):
-    num_1 = brain_games.convertation_str_to_num.conv_num_1(condition)
-    num_2 = brain_games.convertation_str_to_num.conv_num_2(condition)
+    num_1 = brain_games.games.convert_str_to_num.conv_num_1(condition)
+    num_2 = brain_games.games.convert_str_to_num.conv_num_2(condition)
     if '-' in condition:
         right_answer = num_1 - num_2
     elif '+' in condition:

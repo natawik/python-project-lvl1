@@ -1,5 +1,5 @@
 from random import randint
-import brain_games.convertation_str_to_num
+import brain_games.games.convert_str_to_num
 
 
 def show_two_rand_numbers():
@@ -10,8 +10,8 @@ def show_two_rand_numbers():
 
 
 def is_gcd(gcd):
-    num_1 = brain_games.convertation_str_to_num.conv_num_1(gcd)
-    num_2 = brain_games.convertation_str_to_num.conv_num_2(gcd)
+    num_1 = brain_games.games.convert_str_to_num.conv_num_1(gcd)
+    num_2 = brain_games.games.convert_str_to_num.conv_num_2(gcd)
     while(num_1 != num_2):
         if(num_1 > num_2):
             num_1 = num_1 - num_2
