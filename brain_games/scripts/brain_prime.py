@@ -6,8 +6,7 @@ from brain_games.scripts.brain_games import greet
 
 
 def main():
-    greet()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    greet('prime')
     engine('prime')
 
 

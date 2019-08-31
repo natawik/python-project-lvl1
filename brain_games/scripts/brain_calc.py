@@ -6,8 +6,7 @@ from brain_games.scripts.brain_games import greet
 
 
 def main():
-    greet()
-    print('What is the result of the expression?')
+    greet('calc')
     engine('calc')
 
 

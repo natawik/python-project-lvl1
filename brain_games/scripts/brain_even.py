@@ -6,8 +6,7 @@ from brain_games.scripts.brain_games import greet
 
 
 def main():
-    greet()
-    print('Answer "yes" if number even otherwise answer "no".')
+    greet('even')
     engine('even')
 
 

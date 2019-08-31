@@ -6,8 +6,7 @@ from brain_games.scripts.brain_games import greet
 
 
 def main():
-    greet()
-    print('Find the greatest common divisor of given numbers.')
+    greet('gcd')
     engine('gcd')
 
 
