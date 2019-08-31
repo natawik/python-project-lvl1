@@ -8,7 +8,3 @@ from brain_games.scripts.brain_games import greet
 def main():
     greet('prime')
     engine('prime')
-
-
-if __name__ == '__main__':
-    main()
