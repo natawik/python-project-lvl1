@@ -1,21 +1,28 @@
 from random import randint
 
 
+DESCRIPTION = 'What number is missing in the progression?'
+
+
+def make_round():
+    progression, right_answer = show_progression()
+    return progression, str(right_answer)
+
+
 def show_progression():
-    num_1 = randint(1, 100)
+    num1 = randint(1, 100)
     step = randint(1, 10)
+    rand_place = randint(1, 10)
     prog_length = 1
     show_prog = ''
     while (prog_length <= 10):
-        num_1 += step
-        show_prog += str(num_1) + ' '
-        prog_length += 1
-    return show_prog
-
-
-def hidden_number(condition):
-    return condition.split(' ')[randint(0, 9)]
-
-
-def hide_number(condition, right_answer):
-    return condition.replace(right_answer, '..')
+        if prog_length != rand_place:
+            show_prog += str(num1) + ' '
+            prog_length += 1
+            num1 += step
+        else:
+            show_prog += '..' + ' '
+            prog_length += 1
+            hidden_num = num1
+            num1 += step
+    return show_prog, hidden_num

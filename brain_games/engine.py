@@ -1,20 +1,21 @@
 import prompt
-import brain_games.cli
+from brain_games import cli
 
 
 def run(game):
-    name = brain_games.cli.greet()
+    print('Welcome to the Brain Games!')
+    print(game.DESCRIPTION)
+    name = cli.greet()
     counter = 1
     while counter <= 3:
-        condition, right_answer = game
-        print(brain_games.cli.QUESTION.format(condition))
+        question, right_answer = game.make_round()
+        print(cli.QUESTION.format(question))
         answer = prompt.string('Your answer: ')
-        if answer == right_answer:
-            print('Correct!')
-            counter += 1
-        else:
-            print(brain_games.cli.WRONG_ANSWER.format(answer, right_answer))
-            print(brain_games.cli.TRY_AGAIN.format(name))
+        if answer != right_answer:
+            print(cli.WRONG_ANSWER.format(answer, right_answer))
+            print(cli.TRY_AGAIN.format(name))
             break
+        print('Correct!')
+        counter += 1
     else:
-        print(brain_games.cli.CORRECT_ANSWER.format(name))
+        print(cli.CORRECT_ANSWER.format(name))

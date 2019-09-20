@@ -1,20 +1,22 @@
 from random import randint
-import brain_games.games.convert_str_to_num
+
+
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
+
+def make_round():
+    two_rand_numbers, num1, num2 = show_two_rand_numbers()
+    while(num1 != num2):
+        if(num1 > num2):
+            num1 = num1 - num2
+        else:
+            num2 = num2 - num1
+        right_answer = num1
+    return two_rand_numbers, str(right_answer)
 
 
 def show_two_rand_numbers():
-    exp_gen = (randint(1, 100), randint(1, 100))
-    (num_1, num_2) = exp_gen
+    num1 = randint(1, 100)
+    num2 = randint(1, 100)
     show = '{} {}'
-    return (show.format(num_1, num_2))
-
-
-def is_gcd(gcd):
-    num_1 = brain_games.games.convert_str_to_num.conv_num_1(gcd)
-    num_2 = brain_games.games.convert_str_to_num.conv_num_2(gcd)
-    while(num_1 != num_2):
-        if(num_1 > num_2):
-            num_1 = num_1 - num_2
-        else:
-            num_2 = num_2 - num_1
-    return num_1
+    return show.format(num1, num2), num1, num2
