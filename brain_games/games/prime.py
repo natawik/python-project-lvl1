@@ -14,7 +14,6 @@ def is_prime(number):
     if (number < 2):
         return True
     div = 2
-    while(div <= number):
-        if not number % div:
-            div += 1
-        return number == div
+    while number % div:
+        div += 1
+    return number == div
