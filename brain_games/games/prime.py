@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games.even import compare
+from brain_games.games.even import as_yes_or_no
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -7,8 +7,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def make_round():
     number = randint(1, 100)
-    is_right = is_prime(number)
-    right_answer = compare(is_right)
+    right_answer = as_yes_or_no(is_prime(number))
     return number, right_answer
 
 
