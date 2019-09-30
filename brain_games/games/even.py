@@ -6,8 +6,7 @@ DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 def make_round():
     number = randint(1, 100)
-    is_right = is_even(number)
-    right_answer = compare(is_right)
+    right_answer = as_yes_or_no(is_even(number))
     return number, right_answer
 
 
@@ -17,7 +16,7 @@ def is_even(number):
     return True
 
 
-def compare(is_right):
+def as_yes_or_no(is_right):
     if is_right:
         right_answer = 'yes'
     else:
