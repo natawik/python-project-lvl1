@@ -7,8 +7,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def make_round():
     number = randint(1, 100)
-    right_answer = as_yes_or_no(is_prime(number))
-    return number, right_answer
+    return number, as_yes_or_no(is_prime(number))
 
 
 def is_prime(number):
