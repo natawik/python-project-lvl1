@@ -2,14 +2,26 @@
 
 [![Build Status](https://travis-ci.org/natawik/python-project-lvl1.svg?branch=master)](https://travis-ci.org/natawik/python-project-lvl1)
 
-[![asciicast](https://asciinema.org/a/t0Ktdbt4zliUkMjS5ZuW6YnnP.svg)](https://asciinema.org/a/t0Ktdbt4zliUkMjS5ZuW6YnnP)
+Installation package **natawik-brain-games** using `—index-url` option
+[![asciicast](https://asciinema.org/a/271613.svg)](https://asciinema.org/a/271613)
 
-[![asciicast](https://asciinema.org/a/256327.svg)](https://asciinema.org/a/256327)
+Installation package **natawik-brain-games** using `—extra-index-url` option
+[![asciicast](https://asciinema.org/a/271614.svg)](https://asciinema.org/a/271614)
 
-[![asciicast](https://asciinema.org/a/257193.svg)](https://asciinema.org/a/257193)
+Launching a welcome script
+[![asciicast](https://asciinema.org/a/271605.svg)](https://asciinema.org/a/271605)
 
-[![asciicast](https://asciinema.org/a/257532.svg)](https://asciinema.org/a/257532)
+Gameplay **Is Even** with successful and unsuccessful completion
+[![asciicast](https://asciinema.org/a/271606.svg)](https://asciinema.org/a/271606)
 
-[![asciicast](https://asciinema.org/a/260505.svg)](https://asciinema.org/a/260505)
+Gameplay **Calculator** with successful and unsuccessful completion
+[![asciicast](https://asciinema.org/a/271607.svg)](https://asciinema.org/a/271607)
 
-[![asciicast](https://asciinema.org/a/265316.svg)](https://asciinema.org/a/265316)
+Gameplay **Great common divisor** with successful and unsuccessful completion
+[![asciicast](https://asciinema.org/a/271609.svg)](https://asciinema.org/a/271609)
+
+Gameplay **Progression** with successful and unsuccessful completion
+[![asciicast](https://asciinema.org/a/271610.svg)](https://asciinema.org/a/271610)
+
+Gameplay **Is Prime** with successful and unsuccessful completion
+[![asciicast](https://asciinema.org/a/271612.svg)](https://asciinema.org/a/271612)
