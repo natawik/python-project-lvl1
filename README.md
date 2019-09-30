@@ -1,4 +1,4 @@
-This project is a console application where the user interacts with a program that asks various questions in mathematics.
+**This project is a console application where the user interacts with a program that asks various questions in mathematics.**
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/9d8169df1bf54f589d68/maintainability)](https://codeclimate.com/github/natawik/python-project-lvl1/maintainability)
 
