@@ -11,7 +11,7 @@ def make_round():
 
 
 def is_prime(number):
-    if (number < 2):
+    if number < 2:
         return True
     div = 2
     while number % div:

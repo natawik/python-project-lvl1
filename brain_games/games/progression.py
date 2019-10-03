@@ -15,7 +15,7 @@ def show_progression():
     rand_place = randint(1, 10)
     prog_length = 1
     show_prog = ''
-    while (prog_length <= 10):
+    while prog_length <= 10:
         if prog_length != rand_place:
             show_prog += str(num1) + ' '
             prog_length += 1
