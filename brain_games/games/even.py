@@ -1,4 +1,5 @@
 from random import randint
+from brain_games.help_function import as_yes_or_no
 
 
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
@@ -13,11 +14,3 @@ def is_even(number):
     if number % 2:
         return False
     return True
-
-
-def as_yes_or_no(is_right):
-    if is_right:
-        right_answer = 'yes'
-    else:
-        right_answer = 'no'
-    return right_answer

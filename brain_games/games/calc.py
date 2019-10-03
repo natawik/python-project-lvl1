@@ -1,23 +1,21 @@
 from random import randint, choice
+from operator import sub, add, mul
 
 
 DESCRIPTION = 'What is the result of the expression?'
 
 
 def make_round():
-    expression, num1, num2 = show_rand_expression()
-    if '-' in expression:
-        right_answer = int(num1) - int(num2)
-    elif '+' in expression:
-        right_answer = int(num1) + int(num2)
-    else:
-        right_answer = int(num1) * int(num2)
+    expression, right_answer = generate_rand_exp()
     return expression, str(right_answer)
 
 
-def show_rand_expression():
+def generate_rand_exp():
     num1 = randint(1, 100)
-    operation = choice(['-', '+', '*'])
     num2 = randint(1, 100)
+    substraction = ('-', sub(num1, num2))
+    addition = ('+', add(num1, num2))
+    muptiplication = ('*', mul(num1, num2))
+    operation, right_answer = choice([substraction, addition, muptiplication])
     show = '{} {} {}'
-    return show.format(num1, operation, num2), num1, num2
+    return show.format(num1, operation, num2), right_answer

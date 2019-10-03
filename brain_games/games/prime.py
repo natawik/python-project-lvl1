@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games.even import as_yes_or_no
+from brain_games.help_function import as_yes_or_no
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'

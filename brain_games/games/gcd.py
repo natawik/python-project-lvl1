@@ -6,8 +6,8 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 def make_round():
     two_rand_numbers, num1, num2 = show_two_rand_numbers()
-    while(num1 != num2):
-        if(num1 > num2):
+    while num1 != num2:
+        if num1 > num2:
             num1 = num1 - num2
         else:
             num2 = num2 - num1
