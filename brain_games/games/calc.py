@@ -13,9 +13,10 @@ def make_round():
 def generate_rand_exp():
     num1 = randint(1, 100)
     num2 = randint(1, 100)
-    substraction = ('-', sub(num1, num2))
-    addition = ('+', add(num1, num2))
-    muptiplication = ('*', mul(num1, num2))
-    operation, right_answer = choice([substraction, addition, muptiplication])
+    substraction = ('-', sub)
+    addition = ('+', add)
+    muptiplication = ('*', mul)
+    operation, function = choice([substraction, addition, muptiplication])
+    right_answer = function(num1, num2)
     show = '{} {} {}'
     return show.format(num1, operation, num2), right_answer

@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.help_function import as_yes_or_no
+from brain_games.common_function import as_yes_or_no
 
 
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
